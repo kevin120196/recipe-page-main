@@ -62,10 +62,12 @@
        font-weight: 400;
     }
 
-    .card__title{
+    .card .card__title{
       color: hsl(24, 5%, 18%);
       font-size: 2em;
       font-weight: 500;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
 
     .card__ingredients__container__title, .card__nutrition__title,.card__instructions__title{
@@ -90,11 +92,6 @@
       display: block;
       width: 100%;
       border-radius: 20px;
-    }
-
-    .card__title{
-      margin-top: 2rem;
-      margin-bottom: 1rem;
     }
 
     .card .card__subtitle,
@@ -162,6 +159,49 @@
 
     .attribution { font-size: 11px; text-align: center; padding: 1rem; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media screen and (max-width:375px) {
+
+      .card{
+        width: 100%;
+        padding: 2em;
+        border-radius: 0px;
+      }
+
+      .card .card__title{
+        font-size: 1.50em;
+      }
+
+      .card .card__subtitle{
+        font-size: 0.85em;
+      }
+
+      .card .card__img{
+        border-radius: 0px;
+        
+      }
+
+      .card .card__time_container__title
+      {
+        font-size: 1em;
+      }
+
+      .card .card__ingredients__container__title,
+      .card .card__instructions__title,
+      .card .card__nutrition__title{
+        font-size: 1.5em;
+      }
+
+
+      .card .card__time__container__title__item,
+      .card .card__ingredients__container__item,
+      .card .card__ingredients__container__item,
+      .card .card__nutrition__subtitle,
+      .card .card__nutrition__table{
+        font-size: 0.9em;
+      }
+      
+    }
   </style>
 </head>
 <body>
